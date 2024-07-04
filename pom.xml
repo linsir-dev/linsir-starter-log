@@ -1,0 +1,53 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.linsir</groupId>
+    <artifactId>linsir</artifactId>
+    <version>1.0.0</version>
+  </parent>
+
+  <artifactId>linsir-starter-log</artifactId>
+  <version>1.0.0</version>
+  <packaging>jar</packaging>
+
+  <name>linsir-starter-log</name>
+  <url>https://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencies>
+    <!--spring boot spring cloud spring-cloud-alibaba  三个版本需要统一-->
+    <dependency>
+      <groupId>org.springframework.amqp</groupId>
+      <artifactId>spring-rabbit</artifactId>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.cloud</groupId>
+      <artifactId>spring-cloud-stream</artifactId>
+      <optional>true</optional>
+    </dependency>
+    <!--spring boot spring cloud spring-cloud-alibaba  三个版本需要统一-->
+    <dependency>
+      <groupId>com.linsir</groupId>
+      <artifactId>linsir-base-core</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-text</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.alibaba.fastjson2</groupId>
+      <artifactId>fastjson2</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.rocketmq</groupId>
+      <artifactId>rocketmq-client</artifactId>
+      <optional>true</optional>
+    </dependency>
+  </dependencies>
+</project>
